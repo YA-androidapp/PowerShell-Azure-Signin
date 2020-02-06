@@ -1,4 +1,4 @@
-# ”FØî•ñ‚ğ•Û‘¶
+ï»¿# èªè¨¼æƒ…å ±ã‚’ä¿å­˜
 Set-ExecutionPolicy RemoteSigned
 
 mkdir "C:\Users\y\.creds"
@@ -9,12 +9,12 @@ $Credential.Password | ConvertFrom-SecureString | Set-Content $FilePath
 
 
 
-# Ú‘±‚É•K—v‚Èƒ‚ƒWƒ…[ƒ‹‚Ì€”õ
+# æ¥ç¶šã«å¿…è¦ãªãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã®æº–å‚™
 Install-Module -Name MSOnline -AllowClobber
 Import-Module MSOnline
 
 
-# ƒTƒCƒ“ƒCƒ“
+# ã‚µã‚¤ãƒ³ã‚¤ãƒ³
 $Username = "admin"
 $FilePath = "C:\Users\y\.creds\${Username}.sec"
 $encryptedCred = Get-Content $FilePath | ConvertTo-SecureString
